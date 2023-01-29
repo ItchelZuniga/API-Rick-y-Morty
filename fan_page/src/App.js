@@ -6,7 +6,7 @@ import Profile from './components/Profile';
 
 function App() {
   return (
-    <div className="App">
+    <div className='background'>
       <header className="App-header">
       <h1>Bienvenidos a la fan page de</h1>
       <p>Rick & Morty</p>

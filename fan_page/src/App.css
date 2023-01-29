@@ -1,4 +1,4 @@
-body{
+.background{
   padding: 50px;
   margin: 0;
   background-image: url(../src/img/1.jpeg);
@@ -13,7 +13,7 @@ h1{
 }
 p{
   text-align: left;
-  text-shadow: 1px 1px  aliceblue ;
+  text-shadow: 2px 2px  aliceblue ;
   color: #38b000;
   font-family: rickymorty;
   font-size: 60px;
