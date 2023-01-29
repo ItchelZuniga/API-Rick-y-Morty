@@ -1,7 +1,7 @@
 import './App.css';
 import Login from './components/Login';
 import Logout from './components/Logout';
-import Profile from './components/Profile';
+import Mi_cuenta from './pages/Mi_cuenta';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       </header>
         <Login/>
 
-        <Profile />
+        <Mi_cuenta />
         <Logout />
 
     </div>
