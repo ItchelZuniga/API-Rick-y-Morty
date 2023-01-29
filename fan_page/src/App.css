@@ -1,5 +1,6 @@
 body{
   padding: 50px;
+  margin: 0;
   background-image: url(../src/img/1.jpeg);
 }
 @font-face {
@@ -16,5 +17,175 @@ p{
   color: #38b000;
   font-family: rickymorty;
   font-size: 60px;
+}
+
+
+.nav-container{
+  background-color: #d9fcce;
+  width: 3rem;
+ padding: 20px;
+ margin: 0px;
+ height: 100vh;
+ border-radius: 0px 15px 15px 0px;
+ position: fixed;
+ transition: ease;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+
+
+
+}
+
+.nav-container:hover{
+  width: 12rem;
+  flex-direction: column;
+  
+}
+.menu-bar{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #d9fcce;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menuImage-container{
+ background-color: #d9fcce;
+  
+}
+
+.menu-image{
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  width: 12rem;
+  background-color: #aafa96;
+  display:none;
+  margin: 25px;
+  
+}
+
+
+
+ul{
+list-style: none;    
+
+}
+
+.menu-item{
+  background-color: #d9fcce;
+  vertical-align: middle;  
+
+}
+
+.menu-icon{
+  display:fixed;
+  align-content: center;
+  height: 4rem;
+  width: 1.9rem;
+  background-color: #d9fcce;
+  vertical-align: middle;
+ 
+  
+  
+}
+
+.menuIcon-Inferior{
+  display:fixed;
+ align-content: center;
+  position: relative;
+  top: 275px;
+  height: 4rem;
+  width: 1.9rem;
+  background-color: #d9fcce;
+  color: black;
+  vertical-align: middle;
+  
+ 
+  
+}
+
+.link-menu{
+  color: rgb(94, 91, 91);
+  text-decoration: none;
+  line-height: 20px;
+  background-color: #d9fcce;
+  width: 16rem;
+  display: none;
+  vertical-align: middle;
+  height: 5rem;
+  padding: 15px;
+  font-size: 19px;
+  padding-right: 3rem;
+  margin-top: 80px;
+
+}
+
+.link-inferior{
+  color: rgb(94, 91, 91);
+  text-decoration: none;
+  line-height: 30px;
+  position: relative;
+  top: 200px;
+  background-color: #d9fcce;
+  width: 16rem;
+  height: 5rem;
+  display: none;
+  padding: 15px;
+  font-size: 19px;
+  vertical-align: middle;
+  
+
+}
+
+
+.menu-icon:hover{
+  color: #343535;
+  
+}
+
+.menuIcon-Inferior{
+  color: #343535;
+ 
+}
+
+.link-menu:hover{
+  color: #343535;
+  background-color: #aafa96;
+  
+}
+
+.link-inferior:hover{
+  color: #343535;
+  background-color: #aafa96;
+  
+}
+
+.nav-container:hover .link-menu{
+  display: inline;
+  
+  
+  
+}
+.nav-container:hover .link-inferior{
+  display: inline;
+  top: 100px;
+  
+}
+.nav-container:hover .menu-icon{
+  display: inline;
+  top: 100px;
+}
+.nav-container:hover .menuIcon-Inferior{
+  display: inline;
+  top: 100px;
+}
+
+.nav-container:hover .menu-image{
+  display: inline;
 }
 
