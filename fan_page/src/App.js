@@ -1,19 +1,19 @@
-import logo from './logo.svg';
-import { LoginButton } from "./LoginButton";
-import { Profile } from "./Profile";
-import { LogoutButton } from "./LogoutButton";
-import "./App.css";
+import './App.css';
+import Login from './components/Login';
+import Logout from './components/Logout';
+import Profile from './components/Profile';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      </header>
       <h1>Bienvenidos a la fan page de</h1>
       <p>Rick & Morty</p>
-      <LoginButton />
+      </header>
+        <Login/>
+
         <Profile />
-        <LogoutButton />
+        <Logout />
     </div>
   );
 }
