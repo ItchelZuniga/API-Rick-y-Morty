@@ -13,7 +13,7 @@ export default function Episodio (props){
                     <h4>Episodio:<b>{props.episode}</b></h4>
                     <p><b>Al aire:</b>{props.air_date}</p>
                     <p><b>Creado:</b>{props.created}</p>
-                    <img src={props.characters.image} />
+                    <img src={props.characters.image} alt="" />
                      </div>
                 </div>    
             </div>

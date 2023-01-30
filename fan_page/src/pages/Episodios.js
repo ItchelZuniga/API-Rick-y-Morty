@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import Episodio from './Episodio.jsx';
+import Episodio from '../components/episodio';
 
 export default class Episodios extends Component{
     constructor(props){
