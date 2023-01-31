@@ -12,9 +12,22 @@ body{
   font-family: rickymorty;
   src: url(../src/Rick-and-Morty-Font/get_schwifty.ttf);
 }
+
+.Welcome{
+  color: white;
+  margin-left: 150px;
+  padding-top: 0px;
+}
+.Welcome-p{
+  color: #38b000;
+  font-family: rickymorty;
+  margin-left: 150px;
+  font-size: 60px;
+  text-shadow: 2px 2px  aliceblue ;
+}
 .usser-image{
   margin-left: 300px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .usser-name{
   text-align: left;
@@ -30,8 +43,13 @@ body{
   margin-left: 250px;
 }
 
+.btn-login{
+  margin: 50px;
+}
 .btn-logout{
   margin-left: 250px;
+  text-align: right;
+  margin-top: 0px;
 }
 
 .nav-container{

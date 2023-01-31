@@ -11,6 +11,7 @@ function App() {
     <div className='contenido-App'>
       {isAuthenticated ? (
      <>
+     
      <Profile></Profile> <Logout></Logout>
 
      <div className="container">
