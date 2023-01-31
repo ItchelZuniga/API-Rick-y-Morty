@@ -1,4 +1,4 @@
-body{
+.background{
   padding: 50px;
   margin: 0;
   background-image: url(../src/img/1.jpeg);
@@ -10,11 +10,6 @@ body{
 h1{
   text-align: left;
   color: aliceblue;
-
-}
-.logout-btn{
-  margin-left: 150px;
-   width: 90px;
 }
 p{
   text-align: left;
@@ -22,13 +17,9 @@ p{
   color: #38b000;
   font-family: rickymorty;
   font-size: 60px;
-  margin-left: 150px;
 }
 
-.usser-image{
-  margin-top: 150px;
-  margin-left: 250px;
-}
+
 .nav-container{
   background-color: #d9fcce;
   width: 3rem;
