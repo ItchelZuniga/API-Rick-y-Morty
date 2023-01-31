@@ -1,24 +1,38 @@
-.background{
-  padding: 50px;
-  margin: 0;
+*{
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+body{
+ 
   background-image: url(../src/img/1.jpeg);
 }
 @font-face {
   font-family: rickymorty;
   src: url(../src/Rick-and-Morty-Font/get_schwifty.ttf);
 }
-h1{
+.usser-image{
+  margin-left: 300px;
+  margin-top: 150px;
+}
+.usser-name{
   text-align: left;
+  margin-left: 250px;
   color: aliceblue;
 }
-p{
+.usser-email{
   text-align: left;
   text-shadow: 2px 2px  aliceblue ;
   color: #38b000;
   font-family: rickymorty;
   font-size: 60px;
+  margin-left: 250px;
 }
 
+.btn-logout{
+  margin-left: 250px;
+}
 
 .nav-container{
   background-color: #d9fcce;
