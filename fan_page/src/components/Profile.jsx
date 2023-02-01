@@ -34,8 +34,7 @@ function Profile(){
           </Routes>
           </BrowserRouter>
         </div>
-        <h1 className='Welcome'>Bienvenidos a la fan page de</h1>
-      <p className='Welcome-p'>Rick & Morty</p>
+       
             <img className="usser-image" src={user.picture} alt={user.name} />
             <h2 className="usser-name">{user.name}</h2>
             <p className="usser-email">{user.email}</p>

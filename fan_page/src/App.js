@@ -12,16 +12,16 @@ function App() {
       {isAuthenticated ? (
      <>
      
-     <Profile></Profile> <Logout></Logout>
+     
 
      <div className="container">
-
+<Profile></Profile> <Logout></Logout>
      </div>
     
      </> 
       ):(
       
-      <div className='App-header'> 
+      <div className=''> 
         <Login></Login>
         </div>
     

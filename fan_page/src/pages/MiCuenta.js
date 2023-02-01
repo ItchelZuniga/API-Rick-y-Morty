@@ -1,7 +1,8 @@
 import React from "react";
-import Perfil from "./components/PerfilMiCuenta.jsx";
+
+import Profile from "../components/Profile.jsx";
 
 export default function miCuenta() {
     return (
-    <Perfil/>)
+    <Profile/>)
   };
