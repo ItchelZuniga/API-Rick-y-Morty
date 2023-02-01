@@ -7,6 +7,7 @@ import Episodios from "../pages/Episodios";
 import Lugares from "../pages/Lugares";
 import MiCuenta from "../pages/MiCuenta";
 import Desarrolladoras from "../pages/Desarrolladoras";
+import "../App.css";
 
 
 function Profile(){
@@ -34,9 +35,10 @@ function Profile(){
           </Routes>
           </BrowserRouter>
         </div>
-       
+           
             <img className="usser-image" src={user.picture} alt={user.name} />
             <h2 className="usser-name">{user.name}</h2>
+            <h1 className="perfil">Bienvenid@</h1>
             <p className="usser-email">{user.email}</p>
         </div>
         )
