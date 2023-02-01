@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Home from "../pages/Home";
 import Episodios from "../pages/Episodios";
 import Lugares from "../pages/Lugares";
-import MiCuenta from "../pages/Mi cuenta";
+import MiCuenta from "../pages/MiCuenta";
 import Desarrolladoras from "../pages/Desarrolladoras";
 
 
@@ -29,7 +29,7 @@ function Profile(){
             <Route path="/" element={<Home />} />
             <Route path="/episodios" element={<Episodios />} />
             <Route path="/lugares" element={<Lugares />} />
-            <Route path="/miCuenta" element={<MiCuenta />} />
+            <Route path="/MiCuenta" element={<MiCuenta />} />
             <Route path="/desarrolladoras" element={<Desarrolladoras />} />
           </Routes>
           </BrowserRouter>

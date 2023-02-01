@@ -8,7 +8,7 @@ import { AiOutlineUser} from 'react-icons/ai';
 import { HiOutlineInformationCircle} from 'react-icons/hi';
 import logo from "../img/logo.jpeg";
 
-function Navbar() {
+function Navbar() { 
     return (
         <>
             <header className="nav-container">  
