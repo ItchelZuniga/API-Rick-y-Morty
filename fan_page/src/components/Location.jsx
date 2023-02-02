@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Location = ({locations= []}) => {
   return (
     <div className='row'>

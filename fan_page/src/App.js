@@ -3,6 +3,7 @@ import './App.css';
 import Login from './components/Login';
 import Logout from './components/Logout';
 import Profile from './components/Profile';
+import Location from 'react-bootstrap';
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
      
 
      <div className="container">
-<Profile></Profile> <Logout></Logout>
+         <Profile></Profile> 
      </div>
     
      </> 

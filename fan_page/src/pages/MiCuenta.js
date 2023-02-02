@@ -1,8 +1,12 @@
 import React from "react";
-
-import Profile from "../components/Profile.jsx";
+import Cuenta from "../components/Cuenta";
+import Logout from "../components/Logout";
 
 export default function miCuenta() {
     return (
-    <Profile/>)
+    <>
+    <Cuenta />
+    <Logout />
+    </>
+    )
   };
