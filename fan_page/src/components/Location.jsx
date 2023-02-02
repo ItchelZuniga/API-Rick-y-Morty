@@ -1,4 +1,5 @@
 import React from 'react'
+import "../App.css"
 
 
 const Location = ({locations= []}) => {
@@ -6,8 +7,8 @@ const Location = ({locations= []}) => {
     <div className='row'>
       
       {locations.map((item, index) => (
-      <div key={index} className='col'>
-        <div className='card' style={{minwidth: "200px"}}>
+      <div key={index} className='col ' >
+        <div className='card' style={{minwidth: "200px"}} >
           <img src={item.image} alt="" />
           <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>
