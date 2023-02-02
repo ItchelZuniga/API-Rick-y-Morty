@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useEffect , useState} from "react";
 import { Component } from "react";
 import Episodio from '../components/Episodio.jsx';
+import Pagination from "../components/Pagination";
+
+
+ 
+
+
 
 export default class Episodios extends Component{
     constructor(props){
         super(props);
-    
+
+       
 
 this.state={
     episodios:[],
@@ -30,6 +37,9 @@ this.state={
 
 render(){
     return ( 
+        <>
+
+        
         <div className="row">
             {
         this.state.episodios.map((episodio,indice)=>{
@@ -37,6 +47,7 @@ render(){
         }) 
     }
      </div>
+     </>
   )
 }
 }
