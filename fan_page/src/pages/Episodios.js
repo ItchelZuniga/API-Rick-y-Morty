@@ -2,8 +2,8 @@ import React, {useEffect , useState} from "react";
 import { Component } from "react";
 import Episodio from '../components/Episodio.jsx';
 import Pagination from "../components/Pagination";
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+ 
  
 
 
