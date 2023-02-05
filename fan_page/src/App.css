@@ -68,12 +68,14 @@ body{
   height: 30px;
   font-size: 14px;
 }
-
+.contenido-App{
+  margin: 0;
+}
 .nav-contenedor{
   background-color: #d9fcce;
-  width: 3rem;
+  width: 5rem;
  padding: 20px;
- margin: 0px;
+ margin-bottom: 10px;
  height: 100vh;
  border-radius: 0px 15px 15px 0px;
  position: fixed;
@@ -81,16 +83,17 @@ body{
  overflow: hidden;
  display: flex;
  flex-direction: column;
-
-
+ align-content: center;
 
 }
 
 .nav-contenedor:hover{
-  width: 12rem;
+  width: 15rem;
   flex-direction: column;
   
+  
 }
+
 .barra_menu{
   padding: 0;
   margin: 0;
@@ -100,6 +103,7 @@ body{
   background-color: #d9fcce;
   align-items: center;
   cursor: pointer;
+  align-items: center;
 }
 
 .imagen-contenedor{
@@ -111,23 +115,25 @@ body{
   display: flex;
   align-items: center;
   justify-self: start;
-  width: 12rem;
+  width: 12.5rem;
   background-color: #aafa96;
   display:none;
-  margin: 25px;
+  margin: 15px;
   
 }
 
 
 
 .menuNav{
-list-style: none;    
+list-style: none; 
+padding: 0;   
 
 }
 
 .menuItem{
   background-color: #d9fcce;
   vertical-align: middle;  
+ 
 
 }
 
@@ -138,6 +144,7 @@ list-style: none;
   width: 1.9rem;
   background-color: #d9fcce;
   vertical-align: middle;
+ 
  
   
   
@@ -238,4 +245,12 @@ list-style: none;
   display: inline;
 }
 
+.card{
+  margin-left: 50px;
+  
+}
+.pagination{
+  
+  margin-bottom: 15px;
 
+}

@@ -38,6 +38,7 @@ function Lugares() {
 
   return (
     <>
+    
       <Navbar brand="Rick and Morty App" />
 
       <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
@@ -48,6 +49,8 @@ function Lugares() {
 
       <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
       </div>
+
+      
     </>
   
 

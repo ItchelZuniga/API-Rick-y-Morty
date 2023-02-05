@@ -7,6 +7,7 @@ import Episodios from "../pages/Episodios";
 import Lugares from "../pages/Lugares";
 import MiCuenta from "../pages/MiCuenta";
 import Desarrolladoras from "../pages/Desarrolladoras";
+
 import "../App.css";
 
 
@@ -26,6 +27,7 @@ function Profile(){
         
            <BrowserRouter> 
            <Navbar></Navbar>
+           
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/episodios" element={<Episodios />} />
@@ -40,6 +42,7 @@ function Profile(){
             <h2 className="usserName">{user.name}</h2>
             <h1 className="perfilName">Bienvenid@</h1>
             <p className="usuario-email">{user.email}</p>
+           
         </div>
         )
     );

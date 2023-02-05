@@ -11,7 +11,7 @@ import logo from "../img/logo.jpeg";
 function Navbar() { 
     return (
         <>
-        <div className="">
+        <div className="contenedorPrincipal">
         <header className="nav-contenedor">  
              <nav className="barra_menu" >
                  <div className="imagen-contenedor">

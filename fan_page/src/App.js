@@ -16,7 +16,7 @@ function App() {
      
      
 
-     <div className="container">
+     <div className="contenedorPrincipal">
          <Profile></Profile> 
      </div>
     
