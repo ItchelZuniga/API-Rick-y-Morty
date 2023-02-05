@@ -9,9 +9,10 @@ import Location from 'react-bootstrap';
 function App() {
   const{isAuthenticated}=useAuth0();
   return (
+    <>
     <div className='contenido-App'>
       {isAuthenticated ? (
-     <>
+     
      
      
 
@@ -19,7 +20,7 @@ function App() {
          <Profile></Profile> 
      </div>
     
-     </> 
+    
       ):(
       
       <div className=''> 
@@ -31,7 +32,7 @@ function App() {
 
     </div>
 
-    
+    </>
   );
 }
 

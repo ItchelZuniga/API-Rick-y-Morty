@@ -11,40 +11,42 @@ import logo from "../img/logo.jpeg";
 function Navbar() { 
     return (
         <>
-            <header className="nav-container">  
-                <nav className="menu-bar" >
-                    <div className="menuImage-container">
-                        <img className="menu-image" alt="logo" src={logo}/>
-                    </div>
-                    <ul className="nav-menu">
-                        <li className="menu-item">
-                            <HiOutlineHome  className="menu-icon" />
-                            <Link to="/" className="link-menu"> Home   </Link>
-                        </li>
-                        <li className="menu-item">
-                            <FaAsterisk  className="menu-icon" />
-                            <Link to="/episodios" className="link-menu">  Episodios</Link>
-                        </li >
-                        <li className="menu-item">
-                            <GrLocation   className="menu-icon"/>
-                            <Link to="/lugares" className="link-menu">  Lugares</Link>
-                        </li>
-                        
-                    </ul>
+        <div className="">
+        <header className="nav-contenedor">  
+             <nav className="barra_menu" >
+                 <div className="imagen-contenedor">
+                     <img className="menu-imagen" alt="logo" src={logo}/>
+                 </div>
+                 <ul className="menuNav">
+                     <li className="menuItem">
+                         <HiOutlineHome  className="menu-icono" />
+                         <Link to="/" className="linkMenu"> Home   </Link>
+                     </li>
+                     <li className="menuItem">
+                         <FaAsterisk  className="menu-icono" />
+                         <Link to="/episodios" className="linkMenu">  Episodios</Link>
+                     </li >
+                     <li className="menuItem">
+                         <GrLocation   className="menu-icono"/>
+                         <Link to="/lugares" className="linkMenu">  Lugares</Link>
+                     </li>
+                     
+                 </ul>
 
-                    <ul className="nav-menu">
-                    <li className="menu-item">
-                        <AiOutlineUser  className="menuIcon-Inferior col-4" />
-                        <Link to="/miCuenta" className="link-inferior">Mi Cuenta</Link>
-                        </li>
-                        <li className="menu-item">
-                            <HiOutlineInformationCircle   className="menuIcon-Inferior col-4" />
-                        <Link to="/desarrolladoras" className="link-inferior col-4">Desarrolladoras</Link> 
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </>
+                 <ul className="menuNav">
+                 <li className="menuItem">
+                     <AiOutlineUser  className="menuIcono-Inferior " />
+                     <Link to="/miCuenta" className="linkInferior">Mi Cuenta</Link>
+                     </li>
+                     <li className="menuItem">
+                         <HiOutlineInformationCircle   className="menuIcono-Inferior" />
+                     <Link to="/desarrolladoras" className="linkInferior ">Desarrolladoras</Link> 
+                     </li>
+                 </ul>
+             </nav>
+         </header>
+        </div>
+     </>
 
     );
 }

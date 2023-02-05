@@ -1,14 +1,22 @@
-import React from 'react'
-import "../App.css"
+import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap";
 
 
 const Location = ({locations= []}) => {
   return (
-    <div className='row'>
+    <>
+    <br />
+    <br />
+    <br />
+
+
+    <div className="container col-10 ">
+         <div className="row">
       
       {locations.map((item, index) => (
-      <div key={index} className='col ' >
-        <div className='card' style={{minwidth: "200px"}} >
+      <div key={index} className='col-4'>
+        <div className='card' style={{minwidth: "200px"}}>
           <img src={item.image} alt="" />
           <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>
@@ -29,6 +37,8 @@ const Location = ({locations= []}) => {
       
 
     </div>
+    </div>
+    </>
   )
 }
 

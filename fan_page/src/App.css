@@ -14,19 +14,19 @@ body{
   src: url(../src/Rick-and-Morty-Font/get_schwifty.ttf);
 }
 
-.Welcome{
+.Bienvenidos{
   color: white;
   margin-left: 150px;
   padding-top: 0px;
 }
-.Welcome-p{
+.Bienvenidos-p{
   color: #38b000;
   font-family: rickymorty;
   margin-left: 150px;
   font-size: 60px;
   text-shadow: 2px 2px  aliceblue ;
 }
-.usser-image{
+.usser-imagen{
   position: absolute;
   right: 30px;
   margin-top: 30px;
@@ -35,19 +35,19 @@ body{
   border-radius: 53px;
   
 }
-.usser-name{
+.usserName{
   text-align: left;
   padding: 60px 125px 20px ;
   text-align: right;
   color: aliceblue;
 
 }
-.perfil{
+.perfilName{
   padding-top: 20px;
   padding-left: 250px;
   color: white;
 }
-.usser-email{
+.usuario-email{
   text-align: left;
   text-shadow: 2px 2px  aliceblue ;
   color: #38b000;
@@ -56,20 +56,20 @@ body{
   margin-left: 250px;
 }
 
-.btn-login{
+.btn-login1{
   margin: 50px;
 }
-.btn-logout{
+.btn-logout1{
   text-align: center;
   position: absolute;
   right: 30px;
-  top: 150px;
+  top: 110px;
   width: 100px;
   height: 30px;
   font-size: 14px;
 }
 
-.nav-container{
+.nav-contenedor{
   background-color: #d9fcce;
   width: 3rem;
  padding: 20px;
@@ -86,12 +86,12 @@ body{
 
 }
 
-.nav-container:hover{
+.nav-contenedor:hover{
   width: 12rem;
   flex-direction: column;
   
 }
-.menu-bar{
+.barra_menu{
   padding: 0;
   margin: 0;
   display: flex;
@@ -102,12 +102,12 @@ body{
   cursor: pointer;
 }
 
-.menuImage-container{
+.imagen-contenedor{
  background-color: #d9fcce;
   
 }
 
-.menu-image{
+.menu-imagen{
   display: flex;
   align-items: center;
   justify-self: start;
@@ -120,18 +120,18 @@ body{
 
 
 
-ul{
+.menuNav{
 list-style: none;    
 
 }
 
-.menu-item{
+.menuItem{
   background-color: #d9fcce;
   vertical-align: middle;  
 
 }
 
-.menu-icon{
+.menu-icono{
   display:fixed;
   align-content: center;
   height: 4rem;
@@ -143,7 +143,7 @@ list-style: none;
   
 }
 
-.menuIcon-Inferior{
+.menuIcono-Inferior{
   display:fixed;
  align-content: center;
   position: relative;
@@ -158,7 +158,7 @@ list-style: none;
   
 }
 
-.link-menu{
+.linkMenu{
   color: rgb(94, 91, 91);
   text-decoration: none;
   line-height: 20px;
@@ -174,7 +174,7 @@ list-style: none;
 
 }
 
-.link-inferior{
+.linkInferior{
   color: rgb(94, 91, 91);
   text-decoration: none;
   line-height: 30px;
@@ -192,49 +192,50 @@ list-style: none;
 }
 
 
-.menu-icon:hover{
+.menu-icono:hover{
   color: #343535;
   
 }
 
-.menuIcon-Inferior{
+.menuIcono-Inferior{
   color: #343535;
  
 }
 
-.link-menu:hover{
+.linkMenu:hover{
   color: #343535;
   background-color: #aafa96;
   
 }
 
-.link-inferior:hover{
+.linkInferior:hover{
   color: #343535;
   background-color: #aafa96;
   
 }
 
-.nav-container:hover .link-menu{
+.nav-contenedor:hover .linkMenu{
   display: inline;
   
   
   
 }
-.nav-container:hover .link-inferior{
-  display: inline;
-  top: 100px;
-  
-}
-.nav-container:hover .menu-icon{
+.nav-contenedor:hover .linkInferior{
   display: inline;
   top: 100px;
+  
 }
-.nav-container:hover .menuIcon-Inferior{
+.nav-contenedor:hover .menu-icono{
+  display: inline;
+  top: 100px;
+}
+.nav-contenedor:hover .menuIcono-Inferior{
   display: inline;
   top: 100px;
 }
 
-.nav-container:hover .menu-image{
+.nav-contenedor:hover .menu-imagen{
   display: inline;
 }
+
 

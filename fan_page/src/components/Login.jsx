@@ -6,9 +6,9 @@ function Login(){
 
     return (
         <div>
-        <h1 className='Welcome'>Bienvenidos a la fan page de</h1>
-        <p className='Welcome-p'>Rick & Morty</p>
-    <button class="btn-login btn-outline-dark" onClick={ () => loginWithRedirect() }> Iniciar Sesion</button>
+        <h1 className='Bienvenidos'>Bienvenidos a la fan page de</h1>
+        <p className='Bienvenidos-p'>Rick & Morty</p>
+    <button class="btn-login1 btn-outline-dark" onClick={ () => loginWithRedirect() }> Iniciar Sesion</button>
 </div>)}
 
 export default Login;
