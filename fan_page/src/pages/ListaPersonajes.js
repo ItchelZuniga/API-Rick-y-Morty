@@ -1,7 +1,8 @@
 import React, {useEffect , useState} from "react";
 import Navbar from "../components/Navbar";
-import Personaje from "./Personaje";
+import Personaje from "../components/Personaje";
 import Pagination from "../components/Pagination";
+import "../App.css"
 
 function ListaPersonajes() {
 
@@ -9,6 +10,8 @@ function ListaPersonajes() {
   const [Info , setInfo] = useState({});
 
  const initialUrl = "https://rickandmortyapi.com/api/character";
+
+const [busqueda, setBusqueda] =useState("")
 
 
   const ListPersonaje = (url) => {
@@ -20,6 +23,21 @@ function ListaPersonajes() {
     })
     .catch((error)=> console.log(error))
   };
+
+  /**Buqueda */
+  const handleChange =e=>{
+    setBusqueda(e.target.value);
+    filtrar(e.target.value)
+  }
+
+  const filtrar=(namePersonaje)=>{
+    let resultadoBusqueda=personaje.filter((elemento)=>{
+      if(elemento.name.toString().toLowerCase().includes(namePersonaje.toLowerCase())){
+        return elemento;
+      }
+      setPersonaje(resultadoBusqueda)
+    });
+  }
 
     const onPrevious = () => {
       ListPersonaje(Info.prev);
@@ -42,6 +60,10 @@ function ListaPersonajes() {
 
  <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
 
+<div className="filtroBusqueda">
+<label htmlFor="" className='textoBusqueda'>Busqueda de personajes:</label>
+            <input type="text" className=' form-control' value={busqueda} placeholder='Ingrese el personaje' onChange={handleChange}/>
+</div>
  <div className="container mt-5">
    
  <Personaje personaje={personaje} />

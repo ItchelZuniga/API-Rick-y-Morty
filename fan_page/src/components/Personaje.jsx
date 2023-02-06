@@ -1,4 +1,6 @@
 import React from 'react'
+import ListaEpisodios from '../pages/ListaEpisodios';
+import ListaPersonajes from '../pages/ListaPersonajes';
 
 const Personaje = ({personaje= []}) => {
   return (
@@ -6,7 +8,6 @@ const Personaje = ({personaje= []}) => {
     <br/>
     <br/>
     <br/>
-
     <div className="container col-10 ">
     <div className='row'>  
       {personaje.map((item, index) => (

@@ -73,6 +73,14 @@
 .contenido-App{
   margin: 0;
 }
+
+/* estilos fitro*/
+
+.filtroBusqueda{
+  width: 40%;
+margin: 0px 200px;
+
+}
 .nav-contenedor{
   background-color: #d9fcce;
   width: 5rem;

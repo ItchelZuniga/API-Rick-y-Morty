@@ -4,7 +4,9 @@ import Login from './components/Login';
 import Logout from './components/Logout';
 import Profile from './components/Profile';
 import Location from 'react-bootstrap';
+import ListaPersonajes from './pages/ListaPersonajes';
 //import Desarrolladoras from './pages/Desarrolladoras';
+//
 
 
 function App() {
