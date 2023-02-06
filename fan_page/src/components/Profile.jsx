@@ -3,7 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import {BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Home from "../pages/Home";
-import Episodios from "../pages/Episodios";
+import ListaEpisodios from "../pages/ListaEpisodios";
 import Lugares from "../pages/Lugares";
 import MiCuenta from "../pages/MiCuenta";
 import Desarrolladoras from "../pages/Desarrolladoras";
@@ -30,7 +30,7 @@ function Profile(){
            
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/episodios" element={<Episodios />} />
+            <Route path="/episodios" element={<ListaEpisodios />} />
             <Route path="/lugares" element={<Lugares />} />
             <Route path="/MiCuenta" element={<MiCuenta />} />
             <Route path="/desarrolladoras" element={<Desarrolladoras />} />

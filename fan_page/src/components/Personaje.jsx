@@ -1,22 +1,37 @@
-import React from "react";
+import React from 'react'
 
+const Personaje = ({personaje= []}) => {
+  return (
+    <>
+    <br/>
+    <br/>
+    <br/>
 
-export default function Personaje (props){
-       
-        return(
-            <div className='col-md-3'>
-                <div className="card mt-4">
-                <div className="card-header">
-                <img src={props.image} alt="personajes rick y morty" className="card-img-top"/>
-                </div>
-                <div className="card-body">
-                    <h4><b>{props.name}</b></h4>
-                    <p><b>Especie:</b>{props.species}</p>
-                    <p><b>Estado:</b>{props.status}</p>
-                    <p><b>Genero:</b>{props.gender}</p>
-                    <p><b>Origen:</b>{props.origin.name}</p>        
-                     </div>
-                </div>    
-            </div>
-         )
+    <div className="container col-10 ">
+    <div className='row'>  
+      {personaje.map((item, index) => (
+      <div key={index} className='col'>
+        <div className='card' style={{minwidth: "200px"}}>
+            <img src={item.image} alt="" />
+            <div className='card-body'>
+            <h5 className='card-title'>{item.name}</h5>
+            <hr />
+            <p><b>Specie:</b>{item.species}</p>
+            <p><b>Status:</b>{item.status}</p>
+            <p><b>Gender:</b>{item.gender}</p>
+            <p><b>Origin:</b>{item.origin.name}</p>         
+           </div>
+        </div>
+      <br />
+      </div>
+      
+        ))}
+      
+
+    </div>
+    </div>
+    </>
+  )
 }
+
+export default Personaje;
