@@ -4,9 +4,11 @@
   
 }
 
-body{
+.fondoLogin {
  
   background-image: url(../src/img/1.jpeg);
+  height: 100vh;
+  width: 100%;
   
 }
 @font-face {
@@ -90,7 +92,6 @@ body{
 .nav-contenedor:hover{
   width: 15rem;
   flex-direction: column;
-  
   
 }
 
@@ -255,3 +256,140 @@ padding: 0;
 
 }
 
+/******** PAGINA DESARROLLADORAS *******/
+.carousel-indicators [data-bs-target] {
+  margin-left: 10px;
+  margin-right: 80px;
+ }
+
+ .elemento-dev {
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+ }
+
+ .info-desarrolladoras {
+  width: 50%;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  /**align-items: center;*/
+  justify-content: top;
+ }
+
+ .imagen-desarrolladoras {
+  width: 50%;
+  margin-right: 0px;
+  padding: 0px;
+  margin: 0px;
+ }
+
+ .imagen-desarrolladoras img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+ }
+
+ .infoSpace {
+  margin-bottom: 20px;
+ }
+
+ .indicadores {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .indicadores button {
+  border: 1px solid black;
+  /**margin: 10px;*/
+  background-color: #f0f0f000;
+ }
+
+ .indicadores img {
+  height: 75px;
+  width: 75px;
+  border-radius: 12px;
+  border: 1.5px solid black;
+ }
+
+ .infoContainer {
+  height: auto;
+  width: 100%;
+  margin-bottom: 25px;
+ }
+
+ .aboutMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ }
+
+ .aboutMe p {
+  background-color: #8BCF21;
+  position: absolute;
+  height: auto;
+  width: 350px;
+  bottom: 15px;
+  padding: 10px;
+  border-radius: 12px;
+ }
+
+ .desarrolladoraName {
+  /**align-items: center;*/
+  font-size: 45px;
+  margin-bottom: 25px;
+  text-align: center;
+ }
+
+ .infoSpace strong {
+  color: #2b842d;
+  font-size: 17px;
+ }
+
+ .fondoProfile {
+  background: linear-gradient(117.23deg, rgba(139, 207, 33, 0.4) 0.83%, rgba(47, 147, 49, 0.4) 115.36%);
+  min-height: 100vh;
+ }
+
+ body::-webkit-scrollbar {
+  width: 9px;
+  background: rgba(47, 147, 49, 0.4);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #00000065;
+  border-radius: 5px;
+}
+
+/****** ******/
+div .container-fluid {
+  margin: 0px;
+
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+
+.col {
+  padding: 0px;
+}
+
+.col-4 {
+  padding: 0px;
+  padding-left: 0px;
+}
+
+.derecha{
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}

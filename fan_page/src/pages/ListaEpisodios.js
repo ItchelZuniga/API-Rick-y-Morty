@@ -1,5 +1,5 @@
 import React, {useEffect , useState} from "react";
-import Navbar from "../components/Navbar";
+//import Navbar from "../components/Navbar";
 import Episode from "../components/Episode";
 import Pagination from "../components/Pagination";
 
@@ -38,7 +38,7 @@ function ListaEpisodios() {
 
   return (
     <>
-<Navbar brand="Rick and Morty App" />
+ {/**<Navbar brand="Rick and Morty App" />*/}
 
  <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
 

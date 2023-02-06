@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Logout from './components/Logout';
 import Profile from './components/Profile';
 import Location from 'react-bootstrap';
+//import Desarrolladoras from './pages/Desarrolladoras';
 
 
 function App() {
@@ -17,15 +18,18 @@ function App() {
      
 
      <div className="contenedorPrincipal">
+        
          <Profile></Profile> 
+         
      </div>
     
     
       ):(
       
-      <div className=''> 
-        <Login></Login>
-        </div>
+      <div className="fondoLogin"> 
+        <Login />
+      
+      </div>
     
     
       ) }

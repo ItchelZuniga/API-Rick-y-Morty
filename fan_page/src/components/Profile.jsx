@@ -21,28 +21,44 @@ function Profile(){
     return (
         isAuthenticated && (
 
-        <div>
+        <div className="fondoProfile">
 
-          <div className="">
-        
-           <BrowserRouter> 
-           <Navbar></Navbar>
-           
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/episodios" element={<ListaEpisodios />} />
-            <Route path="/lugares" element={<Lugares />} />
-            <Route path="/MiCuenta" element={<MiCuenta />} />
-            <Route path="/desarrolladoras" element={<Desarrolladoras />} />
-          </Routes>
-          </BrowserRouter>
-        </div>
-           
-        <img className="usser-imagen" src={user.picture} alt={user.name} />
-            <h2 className="usserName">{user.name}</h2>
-            <h1 className="perfilName">Bienvenid@</h1>
-            <p className="usuario-email">{user.email}</p>
-           
+          
+        <div className='container-fluid'>
+          <div className='row '>
+                
+                <BrowserRouter> 
+                <div className='col col-3 left'>
+                  <Navbar />
+                </div>
+                
+                <div className='col col-9 right'>
+                  <div className="derecha">
+
+                    <div className="contenedorBienvenido">
+                    <img className="usser-imagen" src={user.picture} alt={user.name} />
+                      <h2 className="usserName">{user.name}</h2>
+                      <h1 className="perfilName">Bienvenid@</h1>
+                      <p className="usuario-email">{user.email}</p>
+                    </div>
+
+                    <Routes>
+                      <Route path="/" element={<Home />} />
+                      <Route path="/episodios" element={<ListaEpisodios />} />
+                      <Route path="/lugares" element={<Lugares />} />
+                      <Route path="/MiCuenta" element={<MiCuenta />} />
+                      <Route path="/desarrolladoras" element={<Desarrolladoras />} />
+                    </Routes>
+                  </div>
+                </div>
+                
+                </BrowserRouter>
+                
+
+              
+            </div>
+
+          </div>
         </div>
         )
     );
