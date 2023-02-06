@@ -7,12 +7,12 @@ const Episode = ({episode= []}) => {
     <br/>
     <br/>
 
-    <div className='container col-10 '>
+    <div className='container col-12'>
     <div className='row'>
       
       {episode.map((item, index) => (
       <div key={index} className='col'>
-        <div className='card' style={{minwidth: "200px"}}>
+        <div className='card' style={{width: " 18rem"}}>
           <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>
             <hr />

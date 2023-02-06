@@ -11,20 +11,20 @@ const Location = ({locations= []}) => {
     <br />
 
 
-    <div className="container col-10 ">
+    <div className="container col-12 m-5" >
          <div className="row">
       
       {locations.map((item, index) => (
-      <div key={index} className='col-4'>
-        <div className='card' style={{minwidth: "200px"}}>
-          <img src={item.image} alt="" />
+      <div key={index} className='col' >
+        <div className='card' style={{width: " 18rem"}}>
+          <img  className="card-img-top" src={item.image} alt="" />
           <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>
             <hr />
-            <p >Origin  : {item.origin.name} </p>
-            <p >Location :{item.location.name} </p>
-            <p >Type :{item.type} </p>
-            <p >Dimension :{item.dimension} </p>
+            <p  className="card-text">Origin  : {item.origin.name} </p>
+            <p  className="card-text">Location :{item.location.name} </p>
+            <p className="card-text">Type :{item.type} </p>
+          
            
           
           </div>
