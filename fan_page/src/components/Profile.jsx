@@ -32,7 +32,7 @@ function Profile(){
                 <div className='col col-3 left'>
                   <Navbar />
                 </div>
-                <div></div>
+                <div><ListaPersonajes /></div>
                 
                 <div className='col col-9 right'>
                   <div className="derecha">
