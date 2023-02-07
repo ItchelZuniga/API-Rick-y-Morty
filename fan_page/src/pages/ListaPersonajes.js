@@ -15,7 +15,7 @@ const [busqueda, setBusqueda] =useState("")
 const [filtroStatus, setFiltroStatus] = useState("");
 
 
-  const ListPersonaje = (url) => {
+  const ListaPersonajes = (url) => {
    fetch(url)
     .then ((Response) => Response.json())
     .then((data) => {
@@ -26,54 +26,33 @@ const [filtroStatus, setFiltroStatus] = useState("");
   };
 
   /**Buqueda */
-  const handleChange =e=>{
+  const buscarPersonajes =(e)=>{
     setBusqueda(e.target.value);
-    filtrar(e.target.value)
+    filtroStatus(e.target.value)
   }
 
-  const filtrar=(namePersonaje)=>{
-    let resultadoBusqueda=personaje.filter((elemento)=>{
-      if(elemento.name.toString().toLowerCase().includes(namePersonaje.toLowerCase())){
-        return elemento;
-      } });
+  const filtrarStatus=(e)=>{
+    setFiltroStatus(e.target.value)
+      } ;
       
-      setPersonaje(resultadoBusqueda)
    
-  }
-  /**Busqueda por estado */
-  const handleCargarbyStatus = e =>{
-    setFiltroStatus(e.target.value);
-    filtrarStatus(e.target.value);
-    /*console.log(opcion);*/
-}
+   useEffect(()=>{
 
-
-  const filtrarStatus = (statusPersonaje) => {
-    let resultStaus = personaje.filter((item) => {
-        if(statusPersonaje === 'Alive'){
-            return item.status === 'Alive';
-        }else if(statusPersonaje === 'Dead'){
-            return item.status === 'Dead';
-        }else if(statusPersonaje === 'unknown'){
-            return item.status === 'unknown';
-        }else{
-            return item;
-        }
-    });
-    setPersonaje(resultStaus);
-}
+   },)
+  
+  
 
     const onPrevious = () => {
-      ListPersonaje(Info.prev);
+      ListaPersonajes(Info.prev);
 
     }
 
     const onNexts = () => {
-      ListPersonaje(Info.next);
+      ListaPersonajes(Info.next);
     }
 
    useEffect(() => {
-         ListPersonaje(initialUrl);
+         ListaPersonajes(initialUrl);
 
 
   }, [])
@@ -85,20 +64,28 @@ const [filtroStatus, setFiltroStatus] = useState("");
  <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
 
 <div className="filtroBusqueda">
-<label htmlFor="" className='textoBusqueda'>Busqueda de personajes:</label>
-            <input type="text" className=' form-control' value={busqueda} placeholder='Ingrese el personaje' onChange={handleChange}/>
-            <br></br>
-            <label htmlFor="" className='textoBusqueda'>Filtro de busqueda por estado</label><br></br>
-            <select className="SelectFiltro" name="" id="" value={filtroStatus} onChange={handleCargarbyStatus}>
+<br></br>
+            <label htmlFor="">Busqueda: </label>
+            <input type="text" onChange={buscarPersonajes}/>
+​
+            <select name="" id="" onChange={filtrarStatus}>
                 <option value="Alive">Alive</option>
-                <option value="Dead">Dead</option>
-                <option value="unknown">unknown</option>
+                <option value="dead">Dead</option>
+                <option value="unknown">Desconocido</option>
             </select>
-            <br />
-            <div className="row">
-                {personaje.map((val, i) => {
-                    return <Personaje key={i} char={val} />
-                })}
+​
+            <div className='row'>
+            {
+                personaje.filter((valor_busqueda) => {
+                    return valor_busqueda.name.includes(busqueda)
+                
+                    /** propiedad => que hace referencia a los elementos de los personajes */
+                }).filter((propiedad) => {
+                    return propiedad.status.includes(filtroStatus)
+                }).map((personaje, indice) => {
+                    return <Personaje key={indice} figura={personaje} /> 
+                })
+            }
             </div>
 </div>
  <div className="container mt-5">
