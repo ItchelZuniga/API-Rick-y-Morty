@@ -12,6 +12,7 @@ function ListaPersonajes() {
  const initialUrl = "https://rickandmortyapi.com/api/character";
 
 const [busqueda, setBusqueda] =useState("")
+const [filtroStatus, setFiltroStatus] = useState("");
 
 
   const ListPersonaje = (url) => {
@@ -34,9 +35,10 @@ const [busqueda, setBusqueda] =useState("")
     let resultadoBusqueda=personaje.filter((elemento)=>{
       if(elemento.name.toString().toLowerCase().includes(namePersonaje.toLowerCase())){
         return elemento;
-      }
+      } });
+      
       setPersonaje(resultadoBusqueda)
-    });
+   
   }
 
     const onPrevious = () => {
