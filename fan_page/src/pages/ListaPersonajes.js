@@ -40,6 +40,28 @@ const [filtroStatus, setFiltroStatus] = useState("");
       setPersonaje(resultadoBusqueda)
    
   }
+  /**Busqueda por estado */
+  const handleCargarbyStatus = e =>{
+    setFiltroStatus(e.target.value);
+    filtrarStatus(e.target.value);
+    /*console.log(opcion);*/
+}
+
+
+  const filtrarStatus = (statusPersonaje) => {
+    let resultStaus = personaje.filter((item) => {
+        if(statusPersonaje === 'Alive'){
+            return item.status === 'Alive';
+        }else if(statusPersonaje === 'Dead'){
+            return item.status === 'Dead';
+        }else if(statusPersonaje === 'unknown'){
+            return item.status === 'unknown';
+        }else{
+            return item;
+        }
+    });
+    setPersonaje(resultStaus);
+}
 
     const onPrevious = () => {
       ListPersonaje(Info.prev);
@@ -65,6 +87,19 @@ const [filtroStatus, setFiltroStatus] = useState("");
 <div className="filtroBusqueda">
 <label htmlFor="" className='textoBusqueda'>Busqueda de personajes:</label>
             <input type="text" className=' form-control' value={busqueda} placeholder='Ingrese el personaje' onChange={handleChange}/>
+            <br></br>
+            <label htmlFor="" className='textoBusqueda'>Filtro de busqueda por estado</label><br></br>
+            <select className="SelectFiltro" name="" id="" value={filtroStatus} onChange={handleCargarbyStatus}>
+                <option value="Alive">Alive</option>
+                <option value="Dead">Dead</option>
+                <option value="unknown">unknown</option>
+            </select>
+            <br />
+            <div className="row">
+                {personaje.map((val, i) => {
+                    return <Personaje key={i} char={val} />
+                })}
+            </div>
 </div>
  <div className="container mt-5">
    
