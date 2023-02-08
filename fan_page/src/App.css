@@ -81,8 +81,12 @@
 margin: 0px 200px;
 
 }
-.SelectFiltro{
+.contenedorPersonaje{
   margin-top: 0px;
+  padding: 0px;
+}
+.personajeCont{
+margin: 0px;
 }
 .nav-contenedor{
   background-color: #d9fcce;

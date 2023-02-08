@@ -5,11 +5,9 @@ import ListaPersonajes from '../pages/ListaPersonajes';
 const Personaje = ({personaje= []}) => {
   return (
     <>
-    <br/>
-    <br/>
-    <br/>
-    <div className="container col-10 ">
-    <div className='row'>  
+  
+    <div className="contenedorPersonaje col-md-10 ">
+    <div className= 'PersonajeCont row'>  
       {personaje.map((item, index) => (
       <div key={index} className='col'>
         <div className='card' style={{minwidth: "200px"}}>

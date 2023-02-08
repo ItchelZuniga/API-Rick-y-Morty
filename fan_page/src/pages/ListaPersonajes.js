@@ -27,15 +27,18 @@ const [filtroStatus, setFiltroStatus] = useState("");
 
   /**Buqueda */
   const buscarPersonajes =(e)=>{
-    setBusqueda(e.target.value);
-    filtroStatus(e.target.value)
-  }
+    setBusqueda(e.target.value)
+
+  };
+  
 
   const filtrarStatus=(e)=>{
     setFiltroStatus(e.target.value)
       } ;
+     
+
       
-   
+      
    useEffect(()=>{
 
    },)
@@ -50,6 +53,8 @@ const [filtroStatus, setFiltroStatus] = useState("");
     const onNexts = () => {
       ListaPersonajes(Info.next);
     }
+    
+
 
    useEffect(() => {
          ListaPersonajes(initialUrl);
@@ -67,19 +72,18 @@ const [filtroStatus, setFiltroStatus] = useState("");
 <br></br>
             <label htmlFor="">Busqueda: </label>
             <input type="text" onChange={buscarPersonajes}/>
-​
             <select name="" id="" onChange={filtrarStatus}>
                 <option value="Alive">Alive</option>
                 <option value="dead">Dead</option>
                 <option value="unknown">Desconocido</option>
-            </select>
-​
-            <div className='row'>
+            </select>​
+            <div className="row">
             {
+             
                 personaje.filter((valor_busqueda) => {
                     return valor_busqueda.name.includes(busqueda)
                 
-                    /** propiedad => que hace referencia a los elementos de los personajes */
+                  
                 }).filter((propiedad) => {
                     return propiedad.status.includes(filtroStatus)
                 }).map((personaje, indice) => {
