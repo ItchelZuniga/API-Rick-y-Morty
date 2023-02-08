@@ -88,6 +88,9 @@ margin: 0px 200px;
 .personajeCont{
 margin: 0px;
 }
+.containerPersonaje{
+margin-left: 200px;
+}
 .nav-contenedor{
   background-color: #d9fcce;
   width: 5rem;
