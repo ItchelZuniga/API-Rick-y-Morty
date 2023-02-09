@@ -2,6 +2,7 @@ import React, {useEffect , useState} from "react";
 import Navbar from "../components/Navbar";
 import Personaje from "../components/Personaje";
 import Pagination from "../components/Pagination";
+import { BiSearch} from 'react-icons/bi';
 import "../App.css"
 
 function ListaPersonajes() {
@@ -84,18 +85,26 @@ const ListaPersonajes = (url) => {
 
 <div className="filtroBusqueda">
 <br></br>
-
-            <select className="form-select form-select-sm mb-5" style={{width: " 15rem"}} aria-label=".form-select-lg example" onChange={filtrarStatus}>
-               <option value="Alive">Alive</option>
-               <option value="dead">Dead</option>
-               <option value="unknown">Unknown</option>
+<div className=" d-flex filtroNombre col-12">
+  
+  <div className="col-sm-10">
+    
+   <input  className="form-control  " value={busqueda} type="text" onChange={buscarPersonajes} placeholder="   Buscar personajes "   />
+   
+   </div>
+   <div className=" col-10 IconCont" style={{width: " 15rem"}} ><BiSearch className="  searchIcon" /> </div>
+   </div>
+   <br></br>
+   
+   <div className="filtroCategorias  col-12">
+    <h5 className="filtroText">Filtro por estado</h5>
+            <select className="form-select form-select-sm mb-6 " style={{width: " 15rem"}} aria-label=".form-select-lg example" onChange={filtrarStatus}>
+               <option className="filtroIem" value="Alive">Alive</option>
+               <option className="filtroIem"value="dead">Dead</option>
+               <option className="filtroIem" value="unknown">Unknown</option>
            </select>
-
-           <label htmlFor=""><b>Busqueda:</b>  </label>
-           <input className="form-control me-2 " value={busqueda} type="text" onChange={buscarPersonajes}/>
-​
-           
-​
+</div>
+          
            <div className='row'>
         
            </div>
@@ -114,87 +123,4 @@ export default ListaPersonajes;
 
 
 
-/**{ 
-  const ListaPersonajes = (url) => {
-   fetch(url)
-    .then ((Response) => Response.json())
-    .then((data) => {
-      setPersonaje(data.results);
-      setInfo(data.info)
-    })
-    .catch((error)=> console.log(error))
-  };}*/
 
-  /**Buqueda 
-  const buscarPersonajes =(e)=>{
-    setBusqueda(e.target.value)
-
-  };*/
-  
-/** 
-  const filtrarStatus=(e)=>{
-    setFiltroStatus(e.target.value)
-      } ;
-     
-
-
-    const onPrevious = () => {
-      ListaPersonajes(Info.prev);
-
-    }
-
-    const onNexts = () => {
-      ListaPersonajes(Info.next);
-    }
-    
-
-
-   useEffect(() => {
-         ListaPersonajes(initialUrl);
-
-
-  }, [])
-*/ /**
-  return (
-    <>
-
-
- <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
-
-<div className="filtroBusqueda">
-<br></br>
-            <label htmlFor="">Busqueda: </label>
-            <input type="text" onChange={buscarPersonajes}/>
-            <select name="" id="" onChange={filtrarStatus}>
-                <option value="Alive">Alive</option>
-                <option value="dead">Dead</option>
-                <option value="unknown">Desconocido</option>
-
-            </select>
-            ​
-            <div className="">
-            {
-             
-                personaje.filter((valor_busqueda) => {
-                    return valor_busqueda.name.includes(busqueda)
-                
-                  
-                }).filter((propiedad) => {
-                    return propiedad.status.includes(filtroStatus)
-                }).map((personaje, indice) => {
-                    return <Personaje key={indice} figura={personaje} /> 
-                })
-            }
-            </div>
-</div>
- <div className="mt-5">
-   
- <Personaje personaje={personaje} />
-
- <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
- </div>
-</>
-    );
-}
-
-export default ListaPersonajes; */

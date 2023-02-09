@@ -78,9 +78,32 @@
 /* estilos fitro*/
 
 .filtroBusqueda{
-  width: 40%;
-margin: 0px 200px;
+  justify-content: space-around;
+vertical-align: middle;
+position: relative;
 
+}
+
+
+.searchIcon{
+  margin: 0 5px;
+  padding: 0px;
+  width:40px;
+  color: white;
+  width: 35px;
+  height: 35px;
+  background-color: #38b000;
+  border-radius: 8px;
+  
+  
+}
+
+.filtroText{
+  font-size: 18px;
+}
+.filtroIem{
+  font-size: 16px;
+  
 }
 .contenedorPersonaje{
   margin-top: 0px;
