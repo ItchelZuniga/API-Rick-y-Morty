@@ -19,15 +19,15 @@ function Navbar() {
                  </div>
                  <ul className="menuNav">
                      <li className="menuItem">
-                         <HiOutlineHome  className="menu-icono" />
+                        <a href="/"> <HiOutlineHome  className="menu-icono" /></a>
                          <Link to="/" className="linkMenu"> Home   </Link>
                      </li>
                      <li className="menuItem">
-                         <FaAsterisk  className="menu-icono" />
+                         <a href="/episodios"><FaAsterisk  className="menu-icono" /></a>
                          <Link to="/episodios" className="linkMenu">  Episodios</Link>
                      </li >
                      <li className="menuItem">
-                         <GrLocation   className="menu-icono"/>
+                         <a href="/lugares"><GrLocation   className="menu-icono"/></a>
                          <Link to="/lugares" className="linkMenu">  Lugares</Link>
                      </li>
                      
@@ -35,20 +35,24 @@ function Navbar() {
 
                  <ul className="menuNav">
                  <li className="menuItem">
-                     <AiOutlineUser  className="menuIcono-Inferior " />
+                     <a href="/miCuenta"><AiOutlineUser  className="menuIcono-Inferior " /></a>
                      <Link to="/miCuenta" className="linkInferior">Mi Cuenta</Link>
                      </li>
                      <li className="menuItem">
-                         <HiOutlineInformationCircle   className="menuIcono-Inferior" />
+                         <a  href="/desarrolladoras"><HiOutlineInformationCircle   className="menuIcono-Inferior" /></a>
                      <Link to="/desarrolladoras" className="linkInferior ">Desarrolladoras</Link> 
                      </li>
                  </ul>
              </nav>
          </header>
         </div>
+
+
+        
      </>
 
     );
 }
 
 export default Navbar;
+
