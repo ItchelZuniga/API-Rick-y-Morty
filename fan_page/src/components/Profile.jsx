@@ -26,7 +26,7 @@ function Profile(){
 
           
         <div className='container-fluid'>
-          <div className='row '>
+          <div className='row'>
                 
                 <BrowserRouter> 
                 <div className='col-2'>
@@ -34,7 +34,7 @@ function Profile(){
                 </div>
                 
                 
-                <div className='col col-12 right'>
+                <div className='col col-9 right'>
                   
                   <div className="derecha">
 

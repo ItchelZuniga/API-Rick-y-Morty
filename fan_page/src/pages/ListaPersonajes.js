@@ -84,14 +84,17 @@ const ListaPersonajes = (url) => {
 
 <div className="filtroBusqueda">
 <br></br>
-           <label htmlFor="">Busqueda: </label>
-           <input value={busqueda} type="text" onChange={buscarPersonajes}/>
-​
-           <select onChange={filtrarStatus}>
+
+            <select className="form-select form-select-sm mb-5" style={{width: " 15rem"}} aria-label=".form-select-lg example" onChange={filtrarStatus}>
                <option value="Alive">Alive</option>
                <option value="dead">Dead</option>
-               <option value="unknown">Desconocido</option>
+               <option value="unknown">Unknown</option>
            </select>
+
+           <label htmlFor=""><b>Busqueda:</b>  </label>
+           <input className="form-control me-2 " value={busqueda} type="text" onChange={buscarPersonajes}/>
+​
+           
 ​
            <div className='row'>
         
