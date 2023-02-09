@@ -14,6 +14,10 @@
 @font-face {
   font-family: rickymorty;
   src: url(../src/Rick-and-Morty-Font/get_schwifty.ttf);
+  font-family: roamer;
+  src: url(../src/Rick-and-Morty-Font/Roamer.ttf);
+  font-family: roman;
+  src: url(../src/Rick-and-Morty-Font/Roman_New_Times.otf);
 }
 
 .Bienvenidos{
@@ -405,6 +409,7 @@ padding: 0;
   .nav-contenedor{
  
  height: 102vh;
+ z-index: 3;
   }
 
 
@@ -440,7 +445,7 @@ padding: 0;
  }
 
  .imagen-desarrolladoras {
-  width: 50%;
+  width: 100%;
   margin-right: 0px;
   padding: 0px;
   margin: 0px;
@@ -469,13 +474,15 @@ padding: 0;
   border: 1px solid black;
   /**margin: 10px;*/
   background-color: #f0f0f000;
+  margin-left: 5px;
+  margin-right: 5px;
  }
 
  .indicadores img {
-  height: 75px;
-  width: 75px;
-  border-radius: 12px;
-  border: 1.5px solid black;
+  height: 55px;
+  width: 55px;
+  border-radius: 6px;
+  border: 1px solid black;
  }
 
  .infoContainer {
@@ -495,7 +502,7 @@ padding: 0;
   background-color: #8BCF21;
   position: absolute;
   height: auto;
-  width: 350px;
+  width: 40%;
   bottom: 15px;
   padding: 10px;
   border-radius: 12px;
@@ -541,6 +548,9 @@ div .container-fluid {
   padding: 0px;
 }
 
+div .row{
+  margin-right: 0px;
+}
 .col {
   padding: 0px;
 }
@@ -553,5 +563,16 @@ div .container-fluid {
 .derecha{
   display: flex;
   flex-direction: column;
-  margin-right: 100px;
+  /**margin-right: 100px;*/
+}
+
+.contenedorBienvenido img {
+  width: 45px;
+  border: 2px solid black;
+}
+
+.usuario-nombre {
+  margin-left: 0px;
+  font-family: roamer;
+  font-size: 60px;
 }
