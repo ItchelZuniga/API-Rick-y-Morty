@@ -15,10 +15,10 @@ const Personaje = ({personaje= []}) => {
             <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>
             <hr />
-            <p><b>Specie:</b>{item.species}</p>
-            <p><b>Status:</b>{item.status}</p>
-            <p><b>Gender:</b>{item.gender}</p>
-            <p><b>Origin:</b>{item.origin.name}</p>         
+            <p className='card-text'><b>Specie:</b>{item.species}</p>
+            <p className='card-text'><b>Status:</b>{item.status}</p>
+            <p className='card-text'><b>Gender:</b>{item.gender}</p>
+            <p className='card-text'><b>Origin:</b>{item.origin.name}</p>         
            </div>
         </div>
       <br />

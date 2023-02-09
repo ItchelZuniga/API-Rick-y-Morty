@@ -11,8 +11,8 @@ export default function Cuenta() {
         isAuthenticated && (
             <div>
                 <img src={user.picture} alt={user.name} />
-                <h2>{user.name}</h2>
-                <p>Email: {user.email}</p>
+                <h2><b>Name:</b>{user.name}</h2>
+                <p><b>Email:</b> {user.email}</p>
             </div>
         )
     );

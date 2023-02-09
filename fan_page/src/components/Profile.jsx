@@ -40,9 +40,7 @@ function Profile(){
 
                     <div className="contenedorBienvenido">
                     <img className="usser-imagen" src={user.picture} alt={user.name} />
-                      <h2 className="usserName">{user.name}</h2>
-                      <h1 className="perfilName">Bienvenid@</h1>
-                      <p className="usuario-email">{user.email}</p>
+                      <h1 className="usuario-nombre"><b>Bienvenid@ </b>{user.name}</h1>
                     </div>
 
                     <Routes>

@@ -21,9 +21,9 @@ const Location = ({locations= []}) => {
           <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>
             <hr />
-            <p  className="card-text">Origin  : {item.origin.name} </p>
-            <p  className="card-text">Location :{item.location.name} </p>
-            <p className="card-text">Type :{item.type} </p>
+            <p  className="card-text"><b>Origin:</b> {item.origin.name} </p>
+            <p  className="card-text"><b>Location:</b>{item.location.name} </p>
+            <p className="card-text"><b>Type:</b>{item.type} </p>
           
            
           

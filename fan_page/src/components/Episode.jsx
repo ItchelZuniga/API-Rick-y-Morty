@@ -16,9 +16,9 @@ const Episode = ({episode= []}) => {
           <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>
             <hr />
-            <p >Episode  : {item.episode} </p>
-            <p >Air Date :{item.air_date} </p>
-            <p><b>Create:</b>{new Date (item.created).getFullYear()}</p>        
+            <p className='card-text'><b>Episode: </b>{item.episode} </p>
+            <p className='card-text'><b>Air Date:</b>{item.air_date} </p>
+            <p className='card-text'><b>Create:</b>{new Date (item.created).getFullYear()}</p>        
            </div>
         </div>
       <br />

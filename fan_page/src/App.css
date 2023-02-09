@@ -19,7 +19,7 @@
 .Bienvenidos{
   color: white;
   margin-left: 150px;
-  padding-top: 0px;
+  padding-top: 30px;
 }
 .Bienvenidos-p{
   color: #38b000;
@@ -49,13 +49,14 @@
   padding-left: 250px;
   color: rgb(18, 17, 17);
 }
-.usuario-email{
+.usuario-nombre{
   text-align: left;
   text-shadow: 2px 2px  rgb(15, 16, 16) ;
   color: #38b000;
   font-family: rickymorty;
   font-size: 55px;
   margin-left: 250px;
+  padding-top: 75px;
 }
 
 .btn-login1{
