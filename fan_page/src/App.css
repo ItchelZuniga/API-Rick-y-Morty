@@ -14,8 +14,18 @@
 @font-face {
   font-family: rickymorty;
   src: url(../src/Rick-and-Morty-Font/get_schwifty.ttf);
+  /**font-family: roamer;
+  src: url(../src/Rick-and-Morty-Font/Roamer.ttf);
+  font-family: roman;
+  src: url(../src/Rick-and-Morty-Font/Roman_New_Times.otf);*/
+}
+
+@font-face {
   font-family: roamer;
   src: url(../src/Rick-and-Morty-Font/Roamer.ttf);
+}
+
+@font-face {
   font-family: roman;
   src: url(../src/Rick-and-Morty-Font/Roman_New_Times.otf);
 }
@@ -59,7 +69,6 @@
   color: #38b000;
   font-family: rickymorty;
   font-size: 55px;
-  margin-left: 250px;
   padding-top: 75px;
 }
 
@@ -413,10 +422,6 @@ padding: 0;
   }
 
 
-.card{
-  margin-left: 50px;
-  
-}
 .pagination{
   
   margin-bottom: 15px;
@@ -571,8 +576,50 @@ div .row{
   border: 2px solid black;
 }
 
-.usuario-nombre {
-  margin-left: 0px;
+
+/***** CARDS ****/
+.card-title {
+  font-family: rickymorty;
+  color: #38b000;
+}
+
+.card-text {
   font-family: roamer;
-  font-size: 60px;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+.container-imagen-cards {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card img {
+  width: 165px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+div.card {
+  border: 1px solid black;
+  --bs-card-cap-bg: none;
+  width: 200px;
+  height: 350px;
+  --bs-card-border-color: none;
+  background-color:rgba(245, 245, 245, 0.24);
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+  --bs-card-bg: none;
+}
+
+.card-body {
+  padding-top: 1px;
+}
+
+div.card-episodios {
+  height: 250px;
 }

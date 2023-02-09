@@ -16,14 +16,17 @@ const Location = ({locations= []}) => {
       
       {locations.map((item, index) => (
       <div key={index} className='col' >
-        <div className='card' style={{width: " 15rem"}}>
-          <img  className="card-img-top" src={item.image} alt="" />
+        <div className='card' /**style={{width: " 15rem"}}*/>
+          <div className='container-imagen-cards'>
+            <img  className="card-img-top" src={item.image} alt="" />
+          </div>
+          
           <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>
-            <hr />
-            <p  className="card-text"><b>Origin:</b> {item.origin.name} </p>
-            <p  className="card-text"><b>Location:</b>{item.location.name} </p>
-            <p className="card-text"><b>Type:</b>{item.type} </p>
+            
+            <p  className="card-text"><b>Origin: </b> {item.origin.name} </p>
+            <p  className="card-text"><b>Location: </b>{item.location.name} </p>
+            <p className="card-text"><b>Type: </b>{item.type} </p>
           
            
           

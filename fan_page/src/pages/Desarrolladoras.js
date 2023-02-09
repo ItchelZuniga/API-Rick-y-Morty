@@ -7,6 +7,8 @@ import melanie_mini from '../img/melanie_mini.jpg'
 import melanie from '../img/melanie.jpg'
 import tatiana from '../img/tatiana.jpg'
 import tatiana_mini from '../img/tatiana_mini.jpg'
+import flor from '../img/flor.jpg'
+import flor_mini from '../img/flor_mini.jpg'
 
 export default function Desarrolladoras() {
     return (
@@ -30,9 +32,11 @@ export default function Desarrolladoras() {
                       <img src={melanie_mini} alt="Melanie Elias" />
                   </button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
-                      <img src={tatiana_mini} alt="Melanie Elias" />
+                      <img src={tatiana_mini} alt="Tatiana Iraheta" />
                   </button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5">
+                    <img src={flor_mini} alt="Flor Zuñiga" />
+                  </button>
                   <button className="" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                       <span className="carousel-control-next-icon" aria-hidden="true"></span>
                       <span className="visually-hidden">Next</span>
@@ -564,7 +568,7 @@ export default function Desarrolladoras() {
 
                           </div>
                           <div className="imagen-desarrolladoras">
-                              <img src={ tatiana } alt="Flor" />
+                              <img src={ flor } alt="Flor" />
                               <div className="aboutMe">
                                   <p>Programadora Junior con capacidad de análisis y funcionar tanto de forma independiente como en un equipo. He desarrollado diferentes proyectos frontend con éxito.</p>
                               </div>
