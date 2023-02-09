@@ -10,13 +10,13 @@ const Location = ({locations= []}) => {
     <br />
     <br />
 
-
-    <div className="container col-12 m-5" >
+    <div className="" >
+    <div className="container col-12" >
          <div className="row">
       
       {locations.map((item, index) => (
       <div key={index} className='col' >
-        <div className='card' style={{width: " 18rem"}}>
+        <div className='card' style={{width: " 15rem"}}>
           <img  className="card-img-top" src={item.image} alt="" />
           <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>
@@ -32,10 +32,12 @@ const Location = ({locations= []}) => {
         </div>
       <br />
       </div>
-      
+     
+
         ))}
       
 
+    </div>
     </div>
     </div>
     </>

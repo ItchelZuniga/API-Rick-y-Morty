@@ -94,7 +94,7 @@ const [filtroStatus, setFiltroStatus] = useState("");
             }
             </div>
 </div>
- <div className="containerPersonaje mt-5">
+ <div className="mt-5">
    
  <Personaje personaje={personaje} />
 

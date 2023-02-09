@@ -41,17 +41,17 @@
   text-align: left;
   padding: 60px 125px 20px ;
   text-align: right;
-  color: aliceblue;
+  color: rgb(11, 12, 14);
 
 }
 .perfilName{
   padding-top: 20px;
   padding-left: 250px;
-  color: white;
+  color: rgb(18, 17, 17);
 }
 .usuario-email{
   text-align: left;
-  text-shadow: 2px 2px  aliceblue ;
+  text-shadow: 2px 2px  rgb(15, 16, 16) ;
   color: #38b000;
   font-family: rickymorty;
   font-size: 55px;

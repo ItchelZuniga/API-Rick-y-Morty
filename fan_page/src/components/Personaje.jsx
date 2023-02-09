@@ -6,11 +6,11 @@ const Personaje = ({personaje= []}) => {
   return (
     <>
   
-    <div className="contenedorPersonaje col-md-10 ">
-    <div className= 'PersonajeCont row'>  
+    <div className="container col-12">
+    <div className= 'row'>  
       {personaje.map((item, index) => (
       <div key={index} className='col'>
-        <div className='card' style={{minwidth: "200px"}}>
+        <div className='card' style={{width: " 15rem"}}>
             <img src={item.image} alt="" />
             <div className='card-body'>
             <h5 className='card-title'>{item.name}</h5>

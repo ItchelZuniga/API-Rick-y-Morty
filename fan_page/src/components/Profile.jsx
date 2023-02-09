@@ -29,7 +29,7 @@ function Profile(){
           <div className='row '>
                 
                 <BrowserRouter> 
-                <div className='col col-3 left'>
+                <div className='col-2'>
                   <Navbar />
                 </div>
                 

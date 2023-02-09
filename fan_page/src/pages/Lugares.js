@@ -43,7 +43,7 @@ function Lugares() {
 
       <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
 
-      <div className="container mt-5">
+      <div className="mt-5">
         
       <Location locations={locations} />
 
