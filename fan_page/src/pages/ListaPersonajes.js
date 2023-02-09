@@ -64,7 +64,7 @@ const [filtroStatus, setFiltroStatus] = useState("");
 
   return (
     <>
-<Navbar brand="Rick and Morty App" />
+{/** <Navbar brand="Rick and Morty App" />*/}
 
  <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
 
@@ -76,7 +76,9 @@ const [filtroStatus, setFiltroStatus] = useState("");
                 <option value="Alive">Alive</option>
                 <option value="dead">Dead</option>
                 <option value="unknown">Desconocido</option>
-            </select>​
+
+            </select>
+            ​
             <div className="row">
             {
              
