@@ -34,7 +34,7 @@ function Profile(){
                 </div>
                 
                 
-                <div className='col col-9 right'>
+                <div className='col col-12 right'>
                   
                   <div className="derecha">
 

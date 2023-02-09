@@ -14,7 +14,104 @@ function ListaPersonajes() {
 const [busqueda, setBusqueda] =useState("")
 const [filtroStatus, setFiltroStatus] = useState("");
 
+const ListaPersonajes = (url) => {
+  fetch(url)
+   .then ((Response) => Response.json())
+   .then((data) => {
+     setPersonaje(data.results);
+     setInfo(data.info)
+   })
+   .catch((error)=> console.log(error))
+ };
 
+ /**Buqueda */
+ const buscarPersonajes =(e)=>{
+   setBusqueda(e.target.value);
+   
+ }
+
+ const filtrarStatus=(e)=>{
+   setFiltroStatus(e.target.value);
+   setBusqueda("");
+     } 
+     
+  
+  useEffect(()=>{
+
+  },)
+ 
+ 
+
+   const onPrevious = () => {
+     ListaPersonajes(Info.prev);
+
+   }
+
+   const onNexts = () => {
+     ListaPersonajes(Info.next);
+   }
+  
+  let result=[];
+
+  if(busqueda){
+   result = personaje.filter((dato) =>
+   dato.name.toLowerCase().includes(busqueda.toLocaleLowerCase())
+   )
+  
+  }else if(filtroStatus ){
+   result = personaje.filter((dato) =>
+   dato.status.toLowerCase().includes(filtroStatus.toLocaleLowerCase())
+   )
+  
+  }else{
+   result = personaje;
+  }
+
+
+  useEffect(() => {
+        ListaPersonajes(initialUrl);
+
+
+ }, [])
+
+
+
+ return (
+   <>
+<Navbar brand="Rick and Morty App" />
+
+<Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
+
+<div className="filtroBusqueda">
+<br></br>
+           <label htmlFor="">Busqueda: </label>
+           <input value={busqueda} type="text" onChange={buscarPersonajes}/>
+​
+           <select onChange={filtrarStatus}>
+               <option value="Alive">Alive</option>
+               <option value="dead">Dead</option>
+               <option value="unknown">Desconocido</option>
+           </select>
+​
+           <div className='row'>
+        
+           </div>
+</div>
+<div className="container mt-5">
+  
+<Personaje personaje={result} />
+
+<Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
+</div>
+</>
+   );
+}
+
+export default ListaPersonajes;
+
+
+
+/**{ 
   const ListaPersonajes = (url) => {
    fetch(url)
     .then ((Response) => Response.json())
@@ -23,27 +120,20 @@ const [filtroStatus, setFiltroStatus] = useState("");
       setInfo(data.info)
     })
     .catch((error)=> console.log(error))
-  };
+  };}*/
 
-  /**Buqueda */
+  /**Buqueda 
   const buscarPersonajes =(e)=>{
     setBusqueda(e.target.value)
 
-  };
+  };*/
   
-
+/** 
   const filtrarStatus=(e)=>{
     setFiltroStatus(e.target.value)
       } ;
      
 
-      
-      
-   useEffect(()=>{
-
-   },)
-  
-  
 
     const onPrevious = () => {
       ListaPersonajes(Info.prev);
@@ -61,10 +151,10 @@ const [filtroStatus, setFiltroStatus] = useState("");
 
 
   }, [])
-
+*/ /**
   return (
     <>
-{/** <Navbar brand="Rick and Morty App" />*/}
+
 
  <Pagination prev={Info.prev} next={Info.next}  onPrevious={onPrevious} onNexts={onNexts} />
 
@@ -79,7 +169,7 @@ const [filtroStatus, setFiltroStatus] = useState("");
 
             </select>
             ​
-            <div className="row">
+            <div className="">
             {
              
                 personaje.filter((valor_busqueda) => {
@@ -104,4 +194,4 @@ const [filtroStatus, setFiltroStatus] = useState("");
     );
 }
 
-export default ListaPersonajes;
+export default ListaPersonajes; */
