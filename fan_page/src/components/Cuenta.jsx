@@ -9,10 +9,13 @@ export default function Cuenta() {
 
     return (
         isAuthenticated && (
-            <div>
-                <img src={user.picture} alt={user.name} />
-                <h2><b>Name:</b>{user.name}</h2>
-                <p><b>Email:</b> {user.email}</p>
+            <div className="container-cuenta">
+                <img className="imagen-usuario" src={user.picture} alt={user.name} />
+                <div className="">
+                    <h2><b>Name: </b>{user.name}</h2>
+                    <p><b>Email: </b> {user.email}</p>
+                </div>
+                
             </div>
         )
     );

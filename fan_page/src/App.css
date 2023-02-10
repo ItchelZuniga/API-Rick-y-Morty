@@ -415,6 +415,15 @@ padding: 0;
       top: 500px;
     }
   }
+
+  @media (max-width: 562px){
+
+    .usuario-nombre{
+      font-size: 40px;
+    }
+    
+  }
+
   .nav-contenedor{
  
  height: 102vh;
@@ -622,4 +631,24 @@ div.card {
 
 div.card-episodios {
   height: 250px;
+}
+
+
+/***** CUENTA ******/
+.container-cuenta {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #2b842d;
+  text-align: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.imagen-usuario {
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.informacion-usuario {
+  gap: 20px;
 }
